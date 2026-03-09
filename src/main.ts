@@ -35,4 +35,5 @@ client.once("ready", () => {
 connectToDatabase(process.env.MONGO_URI as string);
 
 // Iniciar sesión
-client.login(process.env.DISCORD_TOKEN);
+client.login(process.env.DISCORD_TOKEN as string);
+
